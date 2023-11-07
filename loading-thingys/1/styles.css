@@ -1,0 +1,36 @@
+.loading {
+  font-size: 24px;
+  text-align: center;
+}
+
+.loading-text {
+  font-weight: bold;
+}
+
+.loading-animation {
+  display: inline-block;
+  width: 30px;
+  text-align: left;
+}
+
+.loading-animation span {
+  display: inline-block;
+  width: 10px;
+  text-align: center;
+  animation: loading 1s infinite;
+}
+
+@keyframes loading {
+  0%, 100% {
+    content: "/";
+  }
+  25% {
+    content: "|";
+  }
+  50% {
+    content: "-";
+  }
+  75% {
+    content: "\\";
+  }
+}
